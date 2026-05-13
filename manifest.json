@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Matific 5★ Yudi",
+  "version": "1.0",
+  "description": "Automação segura de estrelas para o Matific.",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*://*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
