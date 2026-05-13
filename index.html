@@ -1,9 +1,9 @@
-<div style="text-align: center; margin-top: 50px;">
+<div style="text-align: center; margin-top: 50px; font-family: sans-serif;">
     <h2>⭐ Automação Matific (5 Estrelas) ⭐</h2>
-    <p>Arraste o botão abaixo para a sua barra de favoritos ou copie o endereço do link.</p>
+    <p>Arraste o botão abaixo para a sua barra de favoritos ou adicione aos favoritos.</p>
     
-    <!-- Link formatado como Bookmarklet -->
-    <a href="javascript:(function(){alert('🤖 Robô Matific Ativado!');const o=window.fetch;window.fetch=async function(...t){let e=t[0];if('string'==typeof e&&(e.includes('score')||e.includes('submit')||e.includes('save')||e.includes('episode'))){try{if(t[1]&&t[1].body){let n=JSON.parse(t[1].body);if(void 0!==n.score&&(n.score=100),void 0!==n.stars&&(n.stars=5),void 0!==n.correct&&(n.correct=n.total||10),t[1].body=JSON.stringify(n)}}catch(r){}}return o.apply(this,t)}})();" 
+    <!-- Link corrigido e fechado com aspas antes do style -->
+    <a href="javascript:(function(){alert('🤖 Robô Matific Ativado!');const o=window.fetch;window.fetch=async function(...t){let e=t;if('string'==typeof e&&(e.includes('score')||e.includes('submit')||e.includes('save')||e.includes('episode'))){try{if(t&&t.body){let n=JSON.parse(t.body);if(void 0!==n.score&&(n.score=100),void 0!==n.stars&&(n.stars=5),void 0!==n.correct&&(n.correct=n.total||10),t.body=JSON.stringify(n)}}catch(r){}}return o.apply(this,t)}})();" 
        style="background: linear-gradient(135deg, #ff1493, #7000ff); color: white; padding: 15px 30px; text-decoration: none; border-radius: 30px; font-weight: bold; display: inline-block; box-shadow: 0 4px 15px rgba(112,0,255,0.4);">
        🚀 Arraste para os Favoritos (Matific 5★)
     </a>
