@@ -50,10 +50,10 @@
     function copiarScript() {
         const codigoScript = "javascript:(function(){alert('🤖 Robô Matific Ativado!');const o=window.fetch;window.fetch=async function(...t){let e=t;if('string'==typeof e&&(e.includes('score')||e.includes('submit')||e.includes('save')||e.includes('episode'))){try{if(t&&t.body){let n=JSON.parse(t.body);if(void 0!==n.score&&(n.score=100),void 0!==n.stars&&(n.stars=5),void 0!==n.correct&&(n.correct=n.total||10),t.body=JSON.stringify(n)}}catch(r){}}return o.apply(this,t)}})();";
         
-        navigator.clipboard.writeText(codigoScript).then(() => {
+        navigator.clipboard.writeText(codigoScript).then(function() {
             alert("✨ Código copiado com sucesso! Agora siga as instruções do tutorial abaixo.");
-        }).catch(err => {
-            alert("Erro ao copiar automaticamente. Tente segurar o botão para copiar o texto do link.");
+        }).catch(function(err) {
+            alert("Erro ao copiar automaticamente. Tente atualizar a página.");
         });
     }
     </script>
