@@ -1,38 +1,62 @@
-<div style="text-align: center; margin-top: 50px; font-family: sans-serif;">
-    <h2>⭐ Automação Matific (5 Estrelas) ⭐</h2>
-    <p>Arraste o botão abaixo para a sua barra de favoritos ou adicione aos favoritos.</p>
-    
-    <!-- Link corrigido e fechado com aspas antes do style -->
-    <a href="javascript:(function(){alert('🤖 Robô Matific Ativado!');const o=window.fetch;window.fetch=async function(...t){let e=t;if('string'==typeof e&&(e.includes('score')||e.includes('submit')||e.includes('save')||e.includes('episode'))){try{if(t&&t.body){let n=JSON.parse(t.body);if(void 0!==n.score&&(n.score=100),void 0!==n.stars&&(n.stars=5),void 0!==n.correct&&(n.correct=n.total||10),t.body=JSON.stringify(n)}}catch(r){}}return o.apply(this,t)}})();" 
-       style="background: linear-gradient(135deg, #ff1493, #7000ff); color: white; padding: 15px 30px; text-decoration: none; border-radius: 30px; font-weight: bold; display: inline-block; box-shadow: 0 4px 15px rgba(112,0,255,0.4);">
-       🚀 Arraste para os Favoritos (Matific 5★)
-    </a>
-</div>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matific 5★ Helper</title>
+</head>
+<body style="background-color: #0d1117; margin: 0; padding: 20px;">
 
-<!-- Seção do Tutorial -->
-<div style="max-width: 500px; margin: 30px auto; padding: 20px; background: #1a1a1a; border-radius: 12px; color: #fff; text-align: left; font-family: sans-serif; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
-    <h3 style="color: #00f0ff; margin-top: 0; text-align: center;">📖 Como Usar o Bookmarklet (Favorito)</h3>
-    
-    <div style="margin-bottom: 15px;">
-        <strong style="color: #ff1493;">💻 No Computador (Chrome/Edge):</strong>
-        <p style="margin: 5px 0 0 10px; color: #ccc; font-size: 14px;">Arraste o botão lá de cima diretamente para a sua barra de favoritos do navegador.</p>
+    <!-- Seção do Botão -->
+    <div style="text-align: center; margin-top: 50px; font-family: sans-serif;">
+        <h2 style="color: #ffffff;">⭐ Automação Matific feito pelo yudi (5 Estrelas) ⭐</h2>
+        <p style="color: #c9d1d9;">Clique no botão abaixo para copiar o script automaticamente.</p>
+        
+        <button onclick="copiarScript()" style="background: linear-gradient(135deg, #ff1493, #7000ff); color: white; padding: 15px 30px; border: none; border-radius: 30px; font-weight: bold; display: inline-block; box-shadow: 0 4px 15px rgba(112,0,255,0.4); cursor: pointer; font-size: 16px; margin-bottom: 30px;">
+           📋 Clique para Copiar o Script (Matific 5★)
+        </button>
     </div>
 
-    <div style="margin-bottom: 15px;">
-        <strong style="color: #ff1493;">📱 No iPhone (Safari):</strong>
-        <ul style="margin: 5px 0 0 10px; padding-left: 15px; color: #ccc; font-size: 14px;">
-            <li>Adicione qualquer página aleatória aos seus favoritos.</li>
-            <li>Copie o código do botão (ou o texto do script).</li>
-            <li>Edite o favorito que você salvou: mude o nome para "Matific 5★" e apague o link dele, colando o script no lugar.</li>
-        </ul>
+    <!-- Seção do Tutorial -->
+    <div style="max-width: 500px; margin: 30px auto; padding: 20px; background: #161b22; border-radius: 12px; color: #fff; text-align: left; font-family: sans-serif; box-shadow: 0 4px 10px rgba(0,0,0,0.3); border: 1px solid #30363d;">
+        <h3 style="color: #00f0ff; margin-top: 0; text-align: center;">📖 Como Usar o Script</h3>
+        
+        <div style="margin-bottom: 15px;">
+            <strong style="color: #ff1493;">💻 No Computador (Chrome/Edge):</strong>
+            <p style="margin: 5px 0 0 10px; color: #ccc; font-size: 14px;">Adicione qualquer página aos favoritos, edite-a, mude o nome para "Matific 5★" e cole o código copiado no campo de URL.</p>
+        </div>
+
+        <div style="margin-bottom: 15px;">
+            <strong style="color: #ff1493;">📱 No iPhone (Safari):</strong>
+            <ul style="margin: 5px 0 0 10px; padding-left: 15px; color: #ccc; font-size: 14px;">
+                <li>Adicione qualquer página aleatória aos seus favoritos.</li>
+                <li>Clique no botão acima para copiar o script.</li>
+                <li>Edite o favorito salvo: mude o nome para "Matific 5★" e cole o script no lugar do endereço do link.</li>
+            </ul>
+        </div>
+
+        <div>
+            <strong style="color: #ff1493;">🤖 No Android (Chrome):</strong>
+            <ul style="margin: 5px 0 0 10px; padding-left: 15px; color: #ccc; font-size: 14px;">
+                <li>Adicione esta página atual aos favoritos do seu Chrome.</li>
+                <li>Edite o favorito, coloque o nome de "Matific" e mude a URL colando o código do script.</li>
+                <li>Dentro do jogo do Matific, digite "Matific" na barra de pesquisa do topo e toque no favorito para ativar.</li>
+            </ul>
+        </div>
     </div>
 
-    <div>
-        <strong style="color: #ff1493;">🤖 No Android (Chrome):</strong>
-        <ul style="margin: 5px 0 0 10px; padding-left: 15px; color: #ccc; font-size: 14px;">
-            <li>Adicione esta página atual aos favoritos do seu Chrome.</li>
-            <li>Edite o favorito, mude o nome para "Matific" e cole o código do script no lugar do link (URL).</li>
-            <li>Quando estiver jogando no Matific, digite "Matific" na barra de endereços e clique no favorito que aparecer na lista para ativar.</li>
-        </ul>
-    </div>
-</div>
+    <!-- Script de Cópia Automática -->
+    <script>
+    function copiarScript() {
+        const codigoScript = "javascript:(function(){alert('🤖 Robô Matific Ativado!');const o=window.fetch;window.fetch=async function(...t){let e=t;if('string'==typeof e&&(e.includes('score')||e.includes('submit')||e.includes('save')||e.includes('episode'))){try{if(t&&t.body){let n=JSON.parse(t.body);if(void 0!==n.score&&(n.score=100),void 0!==n.stars&&(n.stars=5),void 0!==n.correct&&(n.correct=n.total||10),t.body=JSON.stringify(n)}}catch(r){}}return o.apply(this,t)}})();";
+        
+        navigator.clipboard.writeText(codigoScript).then(() => {
+            alert("✨ Código copiado com sucesso! Agora siga as instruções do tutorial abaixo.");
+        }).catch(err => {
+            alert("Erro ao copiar automaticamente. Tente segurar o botão para copiar o texto do link.");
+        });
+    }
+    </script>
+
+</body>
+</html>
